@@ -1,0 +1,57 @@
+.navbar-custom .navbar-nav .nav-link {
+    color: red;
+    padding: 1rem 1rem;
+}
+
+.checked {
+  color: orange;
+}
+
+.icon {
+	margin-right: 5px;
+}
+
+.icon-tile {
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	margin-left: 5px; 
+	margin-right: 5px; 
+	height: 120px; 
+	text-align: center; 
+	color: white;
+}
+
+.icon-tile > i {
+	font-size: 40px; 
+	margin-top: 20px; 
+	margin-bottom: 5px;
+}
+
+.latest-col {
+	text-align: center;
+}
+
+.latest-col > img {
+	height: 250px; 
+	border: 1px solid grey;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+.brand {
+	text-align: center;
+}
+
+.brand > img {
+	width: 100%;
+}
+
+.commerce {
+	margin-left: -5px; 
+	margin-top: 15px;
+}
