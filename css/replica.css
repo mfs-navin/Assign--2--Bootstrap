@@ -1,10 +1,10 @@
-.navbar-custom .navbar-nav .nav-link {
-    color: red;
-    padding: 1rem 1rem;
-}
-
 .checked {
   color: orange;
+}
+
+.car-img > img {
+	max-width: 100%;
+  	height: auto;
 }
 
 .icon {
@@ -48,6 +48,15 @@
 }
 
 .brand > img {
+	width: 100%;
+}
+
+.top-sell {
+	text-align: center;
+	height: 200px;
+}
+
+.top-sell > img {
 	width: 100%;
 }
 
