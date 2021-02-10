@@ -7,15 +7,19 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/8a3e0773b7.js" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	
 
 </head>
 <body>
+
+	<!-- Top Navingation Bar -->
 	<div class="container-fullwidth bg-light">
 		<div class="container">
-			<nav class="navbar navbar-expand-sm navbar-light bg-light">
-				<div class="collapse navbar-collapse" id="navbar_top">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto" style="font-size: 12px;">
 						<li class="nav-item active">
 							<a class="nav-link" href="#"><span><i class="fas fa-user icon"></i></span> My Account <span class="sr-only">(current)</span></a>
@@ -59,6 +63,8 @@
 			</nav>	
 		</div>
 	</div>
+
+	<!-- Header -->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 my-auto">
@@ -79,9 +85,14 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Second Navingation Bar-->
 	<div class="container-fullwidth bg-light">
 		<div class="container">
 			<nav class="navbar navbar-expand-sm navbar-light bg-light">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_btm" aria-controls="navbar_btm" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 				<div class="collapse navbar-collapse" id="navbar_btm">
 					<ul class="navbar-nav mr-auto" style="font-size: 15px;">
 						<li class="nav-item active" id='top'>
@@ -113,6 +124,8 @@
 			</nav>	
 		</div>
 	</div>
+
+	<!-- Carousel -->
 	<div class="container">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -120,14 +133,14 @@
 				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 			</ol>
-			<div class="carousel-inner" style="height: 500px;">
-				<div class="carousel-item active">
+			<div class="carousel-inner">
+				<div class="carousel-item active car-img">
 					<img src="images/x2pro.jpg" class="d-block w-100" alt="Realme X2 Pro">
 				</div>
-				<div class="carousel-item">
+				<div class="carousel-item car-img">
 					<img src="images/realmeXt.jpeg" class="d-block w-100" alt="Realme XT">
 				</div>
-				<div class="carousel-item">
+				<div class="carousel-item car-img">
 					<img src="images/realme6pro.jpg" class="d-block w-100" alt="Realme 6 Pro">
 				</div>
 			</div>
@@ -222,7 +235,7 @@
 					<button class="btn btn-danger">prev</button>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row row-cols-1 row-cols-md-4 row-cols-sm-2">
 				<div class="col brand">
 					<img src="images/nokia.png">					
 				</div>
@@ -238,206 +251,173 @@
 			</div>
 		</div>
 	</div>
+
+	<!--Top Seller-->
 	<div class="container">
-		<div class="row" style="margin-top: 30px;">
+		<div class="row row-cols-1 row-cols-md-3" style="margin-top: 30px;">
 			<div class="col">
-				<h5 style="display: inline;">Top Sellers</h5>
-				<button class="btn btn-primary float-right">View All</button>
+				<div class="row">
+					<h5 style="display: inline;">Top Sellers</h5>
+					<button class="btn btn-primary ml-auto">View All</button>
+				</div>
+				<div class="row">
+					<div class="col col-md-4 col-4 top-sell">
+						<img src="images/s15.jpg"  >
+					</div>
+					<div class="col col-md-8 col-8 top-sell">
+						<p>Samsung Galaxy s5</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br><br>
+						<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 top-sell">
+						<img src="images/s15.jpg"  >
+					</div>
+					<div class="col-8 top-sell">
+						<p>Samsung Galaxy s5</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br><br>
+						<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 top-sell">
+						<img src="images/s15.jpg"  >
+					</div>
+					<div class="col-8 top-sell">
+						<p>Samsung Galaxy s5</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br><br>
+						<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
+					</div>
+				</div>
 			</div>
 			<div class="col">
-				<h5 style="display: inline;">Recently Viewed</h5>
-				<button class="btn btn-primary float-right">View All</button>
+				<div class="row">
+					<h5 style="display: inline;">Recently Viewed</h5>
+					<button class="btn btn-primary ml-auto">View All</button>
+				</div>
+				<div class="row">
+					<div class="col-4 top-sell">
+						<img src="images/realmeX2pro.jpg"  >
+					</div>
+					<div class="col-8 top-sell">
+						<p>Samsung Galaxy s5</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br><br>
+						<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 top-sell">
+						<img src="images/realmeX2pro.jpg"  >
+					</div>
+					<div class="col-8 top-sell">
+						<p>Samsung Galaxy s5</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br><br>
+						<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 top-sell">
+						<img src="images/realmeX2pro.jpg"  >
+					</div>
+					<div class="col-8 top-sell">
+						<p>Samsung Galaxy s5</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br><br>
+						<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
+					</div>
+				</div>
 			</div>
 			<div class="col">
-				<h5 style="display: inline;">Top New</h5>
-				<button class="btn btn-primary float-right">View All</button>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col" >
-				<div class="col">
-					<div class="row">
-						<div class="col-4 brand">
-							<img src="images/s15.jpg"  >
-						</div>
-						<div class="col-8">
-							<p>Samsung Galaxy s5</p>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<br><br>
-							<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
-						</div>
+				<div class="row">
+					<h5 style="display: inline;">Top New</h5>
+					<button class="btn btn-primary ml-auto">View All</button>
+				</div>
+				<div class="row">
+					<div class="col-4 top-sell">
+						<img src="images/s15.jpg"  >
+					</div>
+					<div class="col-8 top-sell">
+						<p>Samsung Galaxy s5</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br><br>
+						<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
 					</div>
 				</div>
-			</div>
-			<div class="col" >
-				<div class="col">
-					<div class="row">
-						<div class="col-4 brand">
-							<img src="images/s15.jpg"  >
-						</div>
-						<div class="col-8">
-							<p>Samsung Galaxy s5</p>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<br><br>
-							<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>		
-						</div>
-						
+				<div class="row">
+					<div class="col-4 top-sell">
+						<img src="images/s15.jpg"  >
+					</div>
+					<div class="col-8 top-sell">
+						<p>Samsung Galaxy s5</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br><br>
+						<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
 					</div>
 				</div>
-			</div>
-			<div class="col" >
-				<div class="col">
-					<div class="row">
-						<div class="col-4 brand">
-							<img src="images/s15.jpg">
-						</div>
-						<div class="col-8">
-							<p>Samsung Galaxy s5</p>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<br><br>
-							<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>			
-						</div>
-						
+				<div class="row">
+					<div class="col-4 top-sell">
+						<img src="images/s15.jpg"  >
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col" >
-				<div class="col">
-					<div class="row">
-						<div class="col-4 brand">
-							<img src="images/s15.jpg" >
-						</div>
-						<div class="col-8">
-							<p>Samsung Galaxy s5</p>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<br><br>
-							<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>			
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col" >
-				<div class="col">
-					<div class="row">
-						<div class="col-4 brand">
-							<img src="images/s15.jpg" >
-						</div>
-						<div class="col-8">
-							<p>Samsung Galaxy s5</p>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<br><br>
-							<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>			
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col" >
-				<div class="col">
-					<div class="row">
-						<div class="col-4 brand">
-							<img src="images/s15.jpg" >
-						</div>
-						<div class="col-8">
-							<p>Samsung Galaxy s5</p>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<br><br>
-							<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>			
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col" >
-				<div class="col">
-					<div class="row">
-						<div class="col-4 brand">
-							<img src="images/s15.jpg" >
-						</div>
-						<div class="col-8">
-							<p>Samsung Galaxy s5</p>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<br><br>
-							<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>			
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col" >
-				<div class="col">
-					<div class="row">
-						<div class="col-4 brand">
-							<img src="images/s15.jpg" >
-						</div>
-						<div class="col-8">
-							<p>Samsung Galaxy s5</p>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<br><br>
-							<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>			
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col" >
-				<div class="col">
-					<div class="row">
-						<div class="col-4 brand">
-							<img src="images/s15.jpg" >
-						</div>
-						<div class="col-8">
-							<p>Samsung Galaxy s5</p>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<br><br>
-							<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>			
-						</div>
-						
+					<div class="col-8 top-sell">
+						<p>Samsung Galaxy s5</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br><br>
+						<p><b><span class="text-primary">$150.00</span></b> <strike>$300.00</strike></p>	
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+
+<!-- BootStrap Script -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
