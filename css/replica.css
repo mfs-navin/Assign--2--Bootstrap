@@ -1,5 +1,12 @@
-.checked {
-  color: orange;
+
+.main-nav .nav-link:hover {
+	background-color: #acacac;
+	color: white !important;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
 }
 
 .car-img > img {
@@ -28,12 +35,15 @@
 }
 
 .latest-col {
-	text-align: center;
+	border: 1px solid grey;
+	margin: 8px;
 }
 
 .latest-col > img {
-	height: 250px; 
-	border: 1px solid grey;
+	height: 250px;
+	display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 .text-center {
@@ -52,15 +62,22 @@
 }
 
 .top-sell {
-	text-align: center;
 	height: 200px;
 }
 
 .top-sell > img {
-	width: 100%;
+	width: 80%;
 }
 
 .commerce {
 	margin-left: -5px; 
 	margin-top: 15px;
+}
+
+.col-foot {
+	padding: 0.5rem;
+}
+
+.col-foot .row {
+	padding: 0 1.5rem;
 }
